@@ -2,6 +2,10 @@
 
 This project has mission to generate pix charge code and QR code. Inputing destination pix key and payment amount the code will make the magic.
 
+## how to run
+
+`node index.js <PIX> <AMOUNT> <DESCRIPTION>`
+
 ## References
 
 - https://youtu.be/eO11iFgrdCA?t=466

@@ -6,16 +6,19 @@ const KEYS = {
   nubank: "victorbarros1130@gmail.com",
   stone: "38174830000108",
 }
-const TARGET_DEFAULT = KEYS.nubank
+
+const DEFAULT_TARGET = KEYS.nubank
+const DEFAULT_MERCHANT_NAME = "ItaocarenseTec"
+const DEFAULT_MERCHANT_CITY = "Rio de Janeiro"
 
 const run = () => {
   // User inputs
-  const [value, description, target] = process.argv.splice(2)
+  const [value, description, target, name, city] = process.argv.splice(2)
 
-  const pixKey = KEYS[target] || TARGET_DEFAULT
-  const merchantName = "ItaocarenseTec"
-  const merchantCity = "Rio de Janeiro"
   const amount = Number(value).toFixed(2).toString()
+  const pixKey = KEYS[target] || DEFAULT_TARGET
+  const merchantName = name || DEFAULT_MERCHANT_NAME
+  const merchantCity = city || DEFAULT_MERCHANT_CITY
 
   const code = buildPaymentCode(pixKey,
     `${description || ""}\nby pix-com`,

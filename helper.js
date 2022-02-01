@@ -56,7 +56,7 @@ const buildCRC16 = (payload) => {
   return `${id.CRC16}${"04"}${(resultado.toString(16)).toLocaleUpperCase()}`
 }
 
-function buildPaymentCode(pixKey, description, merchantName, merchantCity, amount, txid) {
+function buildPaymentCode(pixKey, description, merchantName, merchantCity, amount, txid = "***") {
   // ./Anexo.pdf page 16
   let resp = ""
 

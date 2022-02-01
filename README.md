@@ -4,7 +4,7 @@ This project has mission to generate pix charge code and QR code. Inputing desti
 
 ## how to run
 
-`node index.js <PIX> <AMOUNT> <DESCRIPTION>`
+`node index.js <AMOUNT> <DESCRIPTION> <PIX>`
 
 ## References
 

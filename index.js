@@ -5,6 +5,7 @@ const KEYS = {
   cora: "6eea1a3f-f161-4c73-ac88-6efc9745ce59",
   nubank: "victorbarros1130@gmail.com",
   stone: "38174830000108",
+  itau: "+5521985060322",
 }
 
 const DEFAULT_TARGET = KEYS.nubank

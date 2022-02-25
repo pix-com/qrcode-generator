@@ -5,5 +5,8 @@
   "license": "MIT",
   "dependencies": {
     "qrcode": "^1.4.4"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0"
   }
 }
